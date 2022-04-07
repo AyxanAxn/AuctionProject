@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace AuctionProject.Infrastructure.EF.Databases
 {
-    public class ApplicationDbContext : IdentityDbContext<UserBase, UserRole, int>
+    public class ApplicationDbContext : IdentityDbContext<UserBase, IdentityRole<int>, int>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
