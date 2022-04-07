@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AuctionProject.Domain.Commons.EntityBases
 {
-    public abstract class UserBase: IdentityUser<int>, IEntity   
+    public class UserBase: IdentityUser<int>, IEntity   
     {        
         public DateTimeOffset CreationDate { get; set; }
         public DateTimeOffset? ModifiedDate { get; set; }        

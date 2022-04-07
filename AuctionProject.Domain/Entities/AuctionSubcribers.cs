@@ -8,3 +8,5 @@
         public User User { get; set; }
     }
 }
+
+//dialog box chixacaq, sertlerler razilashmaq

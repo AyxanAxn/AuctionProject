@@ -27,5 +27,12 @@ namespace AuctionProject.Infrastructure.EF.Databases
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<AuctionSubcribers>().HasKey(i => new { i.AuctionId, i.UserId});
+            builder.Entity<AuctionWinners>().HasKey(i => new { i.AuctionId, i.UserId});
+
+            base.OnModelCreating(builder);
+        }
     }
 }
