@@ -1,5 +1,4 @@
-﻿using AuctionProject.Domain.Commons.EntityBases;
-using System;
+﻿using System;
 
 namespace AuctionProject.Domain.Entities
 {
